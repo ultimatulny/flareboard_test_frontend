@@ -503,3 +503,30 @@ hr {
 	line-height: 19px;
 	color: #EF5B4F;
 }
+
+.info_buttons {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	position: fixed;
+	bottom: 30px;
+	width: 304px;
+}
+
+.line_btns a {
+	color: #828282;
+	display: block;
+}
+
+.line_btns a:hover {
+	font-weight: bold;
+}
+
+.line_btns {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
