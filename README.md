@@ -2,4 +2,4 @@
  
  https://flareboard-test-frontend.vercel.app/
  
-![image](https://user-images.githubusercontent.com/31167599/209450779-f394cc83-2172-4a90-a03f-1d44356b90ed.png)
+![image](https://user-images.githubusercontent.com/31167599/209451822-d35a627c-a6d6-451b-8152-8bc428d56b1a.png)
