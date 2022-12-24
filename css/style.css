@@ -505,13 +505,14 @@ hr {
 }
 
 .info_buttons {
+	margin-top: 30px;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	position: fixed;
-	bottom: 30px;
+	position: sticky;
+	top: 90px;
 	width: 304px;
 }
 
@@ -529,4 +530,3 @@ hr {
 	display: flex;
 	justify-content: space-around;
 }
-
