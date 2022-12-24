@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flareboard</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="main_header_block">
+			<div class="main_header_logo">
+				<img src="img/logo.svg">
+			</div>
+			<div class="main_header_search">
+				<input type="text" placeholder="Поиск">
+			</div>
+			<div class="main_header_user">
+				<div class="user_info">
+					<img class="user_header_avatar" src="https://avatars.dicebear.com/api/pixel-art/12345.svg">
+					<div class="header_username">username</div>
+					<img class="arrow_down" src="img/arrow_down.svg">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="center_main">
+			<div class="left_block">
+				<div class="left_menu">
+
+					<div class="left_menu_btn">
+						<img class="left_menu_btn_icon" src="img/profile_icon.svg" alt="">
+						<div class="left_menu_btn_text">Профиль</div>
+					</div>
+					<hr>
+					<div class="left_menu_btn">
+						<img class="left_menu_btn_icon" src="img/bell_icon.svg" alt="">
+						<div class="left_menu_btn_text">Уведомления</div>
+						<div class="notifications_count">1</div>
+					</div>
+					<hr>
+					<div class="left_menu_btn">
+						<img class="left_menu_btn_icon" src="img/random_icon.svg" alt="">
+						<div class="left_menu_btn_text">Рандомный пост</div>
+					</div>
+					<hr>
+					<div class="left_menu_btn accordion">
+						<img class="left_menu_btn_icon" src="img/allposts_icon.svg" alt="">
+						<div class="left_menu_btn_text">Все разделы</div>
+						<img class="arrow_down" id="menu_arrow" src="img/arrow_down.svg">
+					</div>
+					<div class="search_panel">
+						<div class="search_panel_input_div">
+							<input type="text" class="search_input" placeholder="Поиск">
+						</div>
+					  	<div class="board_result_search">
+					  		<img src="img/1.jpg">
+					  		<div class="board_result_search_text">Аниме</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/2.png">
+					  		<div class="board_result_search_text">Игры</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/3.jpg">
+					  		<div class="board_result_search_text">Музыка</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/4.jpeg">
+					  		<div class="board_result_search_text">Философия</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/5.png">
+					  		<div class="board_result_search_text">ИньЯнь</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/6.jpeg">
+					  		<div class="board_result_search_text">Пиратское ПО</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/7.png">
+					  		<div class="board_result_search_text">IT и техника</div>
+					  	</div>
+					  	<div class="board_result_search">
+					  		<img src="img/8.jpeg">
+					  		<div class="board_result_search_text">Котеки</div>
+					  	</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="center_block">
+				<div class="top_boards">
+					<div class="top_board">
+						<img src="img/1.jpg">
+						<div class="top_board_text">Аниме</div>
+					</div>
+					<div class="top_board">
+						<img src="img/2.png">
+						<div class="top_board_text">Игры</div>
+					</div>
+					<div class="top_board">
+						<img src="img/3.jpg">
+						<div class="top_board_text">Музыка</div>
+					</div>
+					<div class="top_board">
+						<img src="img/4.jpeg">
+						<div class="top_board_text">Философия</div>
+					</div>
+					<div class="top_board">
+						<img src="img/5.png">
+						<div class="top_board_text">ИньЯнь</div>
+					</div>
+					<div class="top_board">
+						<img src="img/6.jpeg">
+						<div class="top_board_text">Пиратское ПО</div>
+					</div>
+				</div>
+
+
+				<div class="lenta_configurate">
+					<div class="lenta_tabs">
+						<div class="lenta_tab">Популярное</div>
+						<div class="lenta_tab active_lenta_tab">Свежее</div>
+						<div class="lenta_tab">Подписки</div>
+					</div>
+					<div class="create_post"><div>Создать запись</div>
+						<img src="img/pencil_icon.svg">
+					</div>
+				</div>
+
+				<div class="lenta">
+
+					<div class="post">
+						<div class="post_head">
+							<div class="post_author">
+								<img src="https://avatars.dicebear.com/api/pixel-art/12345.svg">
+								<div class="post_username">
+									<div class="name_and_board">
+										<div class="post_username_name">username</div>
+										<div class="post_username_board">Музыка</div>
+									</div>
+									<div class="post_time">14:30</div>
+								</div>
+							</div>
+							<img class="post_dots" src="img/post_dots_icon.svg">
+						</div>
+
+						<div class="post_text">
+							Прочитал тут статью на тему 10 вещей, которые нельзя делать на сайте в 2022 году. И комменты к этой статье.
+						</div>
+
+						<img src="img/post_img_1.jpg" class="post_image">
+
+						<div class="post_bot">
+							<div class="post_comments_btn">
+								<img src="img/comments_icon.svg">
+								<div class="post_comments_count">
+									12 комментариев
+								</div>
+							</div>
+							<div class="post_likes_btn">
+								<img src="img/unactive_like.svg">
+								<div class="count_likes">5</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="post">
+						<div class="post_head">
+							<div class="post_author">
+								<img src="https://avatars.dicebear.com/api/pixel-art/1232245.svg">
+								<div class="post_username">
+									<div class="name_and_board">
+										<div class="post_username_name">num404</div>
+										<div class="post_username_board">自由</div>
+									</div>
+									<div class="post_time">12:43</div>
+								</div>
+							</div>
+							<img class="post_dots" src="img/post_dots_icon.svg">
+						</div>
+
+						<div class="post_text">
+							В связи с появлением здесь этой доски, мне стало интересно спросить вас
+Что вы делали бы, дай вам абсолютную свободу? Представим, что финансы, законы, болезни для вас больше не проблема. Чем бы вы занялись?
+						</div>
+
+						
+
+						<div class="post_bot">
+							<div class="post_comments_btn">
+								<img src="img/comments_icon.svg">
+								<div class="post_comments_count">
+									42 комментария
+								</div>
+							</div>
+							<div class="post_likes_btn">
+								<img src="img/unactive_like.svg">
+								<div class="count_likes">41</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="post">
+						<div class="post_head">
+							<div class="post_author">
+								<img src="https://avatars.dicebear.com/api/pixel-art/1265.svg">
+								<div class="post_username">
+									<div class="name_and_board">
+										<div class="post_username_name">Ailua</div>
+										<div class="post_username_board">Музыка</div>
+									</div>
+									<div class="post_time">03:06</div>
+								</div>
+							</div>
+							<img class="post_dots" src="img/post_dots_icon.svg">
+						</div>
+
+						<div class="post_text">
+							Я выучила весь текст инстасамка дисс, а ещё мне на время дали старенький самсунг🥲ну хоть что то)
+						</div>
+
+						
+
+						<div class="post_bot">
+							<div class="post_comments_btn">
+								<img src="img/comments_icon.svg">
+								<div class="post_comments_count">
+									12 комментариев
+								</div>
+							</div>
+							<div class="post_likes_btn">
+								<img src="img/unactive_like.svg">
+								<div class="count_likes">5</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="post">
+						<div class="post_head">
+							<div class="post_author">
+								<img src="https://avatars.dicebear.com/api/pixel-art/15345.svg">
+								<div class="post_username">
+									<div class="name_and_board">
+										<div class="post_username_name">DeusExMachina</div>
+										<div class="post_username_board">Картинки</div>
+									</div>
+									<div class="post_time">05:52</div>
+								</div>
+							</div>
+							<img class="post_dots" src="img/post_dots_icon.svg">
+						</div>
+
+						<div class="post_text">
+							
+						</div>
+
+						<img src="img/post_img_3.jpg" class="post_image">
+
+						<div class="post_bot">
+							<div class="post_comments_btn">
+								<img src="img/comments_icon.svg">
+								<div class="post_comments_count">
+									3 комментария
+								</div>
+							</div>
+							<div class="post_likes_btn">
+								<img src="img/unactive_like.svg">
+								<div class="count_likes">21</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="post">
+						<div class="post_head">
+							<div class="post_author">
+								<img src="https://avatars.dicebear.com/api/pixel-art/4322.svg">
+								<div class="post_username">
+									<div class="name_and_board">
+										<div class="post_username_name">mishaphilist</div>
+										<div class="post_username_board">Сырки</div>
+									</div>
+									<div class="post_time">18:21</div>
+								</div>
+							</div>
+							<img class="post_dots" src="img/post_dots_icon.svg">
+						</div>
+
+						<div class="post_text">
+							Только что купил вантуз. Теперь я официально сортирный король.
+						</div>
+
+						<img src="img/post_img_2.jpg" class="post_image">
+
+						<div class="post_bot">
+							<div class="post_comments_btn">
+								<img src="img/comments_icon.svg">
+								<div class="post_comments_count">
+									12 комментариев
+								</div>
+							</div>
+							<div class="post_likes_btn">
+								<img src="img/unactive_like.svg">
+								<div class="count_likes">5</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="right_block">
+				<div class="new_boards_block">
+					<div class="new_boards_text">Новые доски</div>
+					<div class="new_boards">
+
+						<div class="new_board">
+							<img src="img/new_1.jpg">
+							<div class="new_board_info">
+								<div class="new_board_name">Minecraft</div>
+								<div class="new_board_about">Сообщество игры</div>
+							</div>
+						</div>
+
+						<div class="new_board">
+							<img src="img/new_2.jpeg">
+							<div class="new_board_info">
+								<div class="new_board_name">Команда 33</div>
+								<div class="new_board_about">Вышел новый трек</div>
+							</div>
+						</div>
+
+						<div class="new_board">
+							<img src="img/new_3.jpg">
+							<div class="new_board_info">
+								<div class="new_board_name">МИР ИГР</div>
+								<div class="new_board_about">Мы онлайн</div>
+							</div>
+						</div>
+
+						<div class="new_board">
+							<img src="img/new_4.jpeg">
+							<div class="new_board_info">
+								<div class="new_board_name">Жизнь на Бали</div>
+								<div class="new_board_about"></div>
+							</div>
+						</div>
+
+						<div class="new_board">
+							<img src="img/new_5.jpg">
+							<div class="new_board_info">
+								<div class="new_board_name">Цитаты</div>
+								<div class="new_board_about">Обо всем</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="all_boards_btn">
+						Все доски
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var arrow = document.getElementById("menu_arrow");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    arrow.classList.toggle("arrow_rotate");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+</script>
+</body>
+</html>
