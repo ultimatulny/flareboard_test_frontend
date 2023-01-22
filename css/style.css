@@ -4,6 +4,15 @@
 	text-decoration: none;
 }
 
+.scroll_search_result::-webkit-scrollbar {
+  width: 10px;           
+}
+.scroll_search_result::-webkit-scrollbar-thumb {
+  background-color: #F7F7F7;   
+  border-radius: 20px;    
+  margin-top: 10px;     
+}
+
 html, body {
 
 }
@@ -57,7 +66,7 @@ header {
 .main_header_search input, .search_panel_input_div input {
 	width: 644px;
 	height: 34px;
-	border: 1px solid #BDBDBD;
+	border: 1px solid #EFEFEF;
 	border-radius: 20px;
 	padding-left: 16px;
 	font-family: 'Roboto';
@@ -67,6 +76,11 @@ header {
 	line-height: 19px;
 	color: #BDBDBD;
 	opacity: 0.6;
+	background-color: #F7F7F7;
+}
+
+.main_header_search input:focus {
+	background-color: white;
 }
 
 .main_header_search input:focus, .search_panel_input_div input:focus {
@@ -90,6 +104,10 @@ header {
 
 .search_panel_input_div input{
 	width: 224px;
+}
+
+.search_panel_input_div input:focus{
+	background-color: white;
 }
 
 .main_header_user .user_info {
@@ -148,24 +166,28 @@ main {
 }
 
 .left_menu_btn {
-	height: 63px;
+	height: 53px;
 	display: flex;
 	align-items: center;
-	}
+}
 
 .left_menu_btn_icon {
-	height: 25px;
-	margin-left: 20px;
+	height: 20px;
+	margin-left: 25px;
+	opacity: 0.8;
 }
 
 .left_menu_btn_text {
 	font-family: 'Roboto';
-	font-size: 20px;
-	color: #4F4F4F;
-	margin-left: 28px;
+	font-size: 16px;
+	color: #828282;
+	margin-left: 20px;
+	margin-top: 3px;
 }
 
 hr {
+	width: 195px;
+	margin-left: 65px;
 	border: 0px;
 	background-color: #E0E0E0;
 	height: 1px;
@@ -189,19 +211,31 @@ hr {
 
 .left_menu_btn:hover{
 	cursor: pointer;
+	background-color: #F7F7F7;
+	margin-top: -1px;
+	padding-top: 1px;
 }
 
-.left_menu_btn:hover .left_menu_btn_text{
-	font-weight: bold;
+.first_left_menu_btn:hover {
+	border-radius: 20px 20px 0px 0px;
+}
+
+.left_menu_btn:hover + hr {
+	background-color: #F7F7F7;
+	width: 100%;
+	margin-left: 0;
 }
 
 .search_panel {
   padding: 16px 30px;
-  background: #F2F2F2;
   display: none;
   overflow: hidden;
-  height: 300px;
-  overflow-y: scroll;
+  
+}
+
+.scroll_search_result {
+	overflow-y: scroll;
+	height: 300px;
 }
 
 .arrow_rotate {
@@ -247,8 +281,9 @@ hr {
 .top_board_text {
 	font-family: 'Roboto';
 	font-size: 12px;
-	color: #4F4F4F;	
+	color: #4F4F4F;
 	margin-top: 3px;
+	opacity: 0.7;
 }
 
 .top_board:hover {
@@ -271,12 +306,14 @@ hr {
 .lenta_tab {
 	font-family: 'Roboto';
 	font-size: 16px;
-	color: #4F4F4F;
+	
 	padding: 5px 10px;
+	color: #828282;
 }
 
 .active_lenta_tab {
 	background-color: white;
+	color: #4F4F4F;
 	border-radius: 20px;
 }
 
@@ -318,6 +355,11 @@ hr {
 	margin-bottom: 30px;
 }
 
+.post:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
 .post_head {
 	display: flex;
 	justify-content: space-between;
@@ -352,6 +394,18 @@ hr {
 	font-size: 16px;
 	line-height: 19px;
 	color: #4F4F4F;
+}
+
+.post_username_name:hover {
+	text-decoration: underline;
+}
+
+.post_username_board:hover {
+	text-decoration: underline;
+}
+
+.post_time:hover {
+	color: grey;
 }
 
 .post_author img {
@@ -444,14 +498,14 @@ hr {
 	background: #FFFFFF;
 	border-radius: 20px;
 	padding-top: 20px;
-	padding-bottom: 30px;
+	
 	font-family: 'Roboto';
 }
 
 .new_boards_text {
 	text-align: center;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 20px;
 	line-height: 23px;
 	color: #4F4F4F;
@@ -502,6 +556,13 @@ hr {
 	font-size: 16px;
 	line-height: 19px;
 	color: #EF5B4F;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0px 20px 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
 .info_buttons {
